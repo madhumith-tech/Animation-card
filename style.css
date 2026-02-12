@@ -1,0 +1,47 @@
+body {
+    background-color: lightblue;
+    font-family: Arial;
+    text-align: center;
+}
+.card {
+    background-color: magenta;
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px gray;
+    transition: 0.3s;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+button {
+    padding: 8px 15px;
+    margin: 10px 5px;
+    border: none;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+@media (max-width: 500px) {
+    .card {
+        width: 90%;
+    }
+}
+@media (min-width: 501px) and (max-width: 800px) {
+    .card {
+        width: 60%;
+    }
+}
+
+@media (min-width: 801px) {
+    .card {
+        width: 300px;
+    }
+}
